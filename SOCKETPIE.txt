@@ -3,4 +3,7 @@ LINUX/TERMUX
 apt-get install update && apt-get install upgrade && apt install python3 && apt install python && apt install git && git clone https://github.com/Hex1629/SOCKETPIE_DOSTOOL && cd SOCKETPIE_DOSTOOL && pip install requests && pip install colorama && python pie.py
 
 WINDOWS
-cd SOCKETPIE_DOSTOOL-main && pip install requests && pip install colorama && python pie.py
+
+cd Downloads && cd SOCKETPIE_DOSTOOL-main && pip install requests && pip install colorama && python pie.py
+
+cd <your folder download socketpie> && cd SOCKETPIE_DOSTOOL-main && pip install requests && pip install colorama && python pie.py
