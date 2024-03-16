@@ -1,0 +1,19 @@
+LINUX/TERMUX ( FIRST INSTALL )
+
+apt-get install update && apt-get install upgrade && apt install python3 && apt install python && apt install git && git clone https://github.com/Hex1629/SOCKETEXPLODE_DOSTOOL && cd SOCKETEXPLODE_DOSTOOL && python setup.py
+
+WINDOWS ( FIRST INSTALL )
+
+cd Downloads && cd SOCKETEXPLODE_DOSTOOL-main && python setup.py
+
+cd <your-folder> && cd SOCKETEXPLODE_DOSTOOL-main && python setup.py
+
+LINUX/TERMUX ( AFTER INSTALL )
+
+cd SOCKETEXPLODE_DOSTOOL && python main.py
+
+WINDOWS ( AFTER INSTALL )
+
+cd Downloads && cd SOCKETEXPLODE_DOSTOOL-main && python main.py
+
+cd <your-folder> && cd SOCKETEXPLODE_DOSTOOL-main && python main.py
