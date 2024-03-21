@@ -5,6 +5,7 @@
 if [ -d "/proc/sys/xen" ] || [ -d "/proc/sys/vmware" ] || [ -d "/proc/sys/qemu" ]; then
     echo "Running on a VPS."
     apt install python-is-python3
+    exit 1
 else
     echo "Not running on a VPS. Exiting..."
     exit 1
