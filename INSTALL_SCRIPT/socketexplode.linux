@@ -8,4 +8,11 @@ if [ -d "/proc/sys/xen" ] || [ -d "/proc/sys/vmware" ] || [ -d "/proc/sys/qemu" 
 else
     echo "Not running on a VPS. Exiting..."
 fi
-apt-get install update && apt-get install upgrade && apt install python3 && apt install python && apt install git && git clone https://github.com/Hex1629/SOCKETEXPLODE_DOSTOOL && cd SOCKETEXPLODE_DOSTOOL && python setup.py
+apt-get install update
+apt-get install upgrade
+apt install python3
+apt install python
+apt install git
+git clone https://github.com/Hex1629/SOCKETEXPLODE_DOSTOOLL
+cd SOCKETEXPLODE_DOSTOOL
+python setup.py
