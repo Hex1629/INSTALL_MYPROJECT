@@ -1,18 +1,11 @@
-
-#!/bin/bash
-
-# Check if the system has a hypervisor
-if [ -d "/proc/sys/xen" ] || [ -d "/proc/sys/vmware" ] || [ -d "/proc/sys/qemu" ]; then
-    echo "Running on a VPS."
-    apt install python-is-python3
-else
-    echo "Not running on a VPS. Exiting..."
+apt install -y python-is-python3 python3 git
+apt update -y
+apt upgrade -y
+if [ $? -ne 0 ]; then
+    apt-get update -y
+    apt-get upgrade -y
+    apt-get install -y python3 git build-essential
 fi
-apt-get install update
-apt-get install upgrade
-apt install python3
-apt install python
-apt install git
-git clone https://github.com/Hex1629/SOCKETEXPLODE_DOSTOOLL
+git clone https://github.com/Hex1629/SOCKETEXPLODE_DOSTOOL
 cd SOCKETEXPLODE_DOSTOOL
 python setup.py
