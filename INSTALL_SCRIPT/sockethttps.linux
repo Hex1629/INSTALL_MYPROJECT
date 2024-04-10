@@ -6,6 +6,8 @@ if [ $? -ne 0 ]; then
     apt-get upgrade -y
     apt-get install -y python3 git python-is-python3 python3-pip
 fi
+pip install requests
+pip install PySocks
 git clone https://github.com/Hex1629/SOCKETHTTPS_DOSTOOL/
 cd SOCKETHTTPS_DOSTOOL
 ls
