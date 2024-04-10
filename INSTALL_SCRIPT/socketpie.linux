@@ -8,4 +8,13 @@ if [ -d "/proc/sys/xen" ] || [ -d "/proc/sys/vmware" ] || [ -d "/proc/sys/qemu" 
 else
     echo "Not running on a VPS. Exiting..."
 fi
-apt-get install update && apt-get install upgrade && apt install python3 && apt install python && apt install git && git clone https://github.com/Hex1629/SOCKETPIE_DOSTOOL && cd SOCKETPIE_DOSTOOL && pip install requests && pip install colorama && python pie.py
+apt-get install update
+apt-get install upgrade
+apt install python3
+apt install python
+apt install git
+git clone https://github.com/Hex1629/SOCKETPIE_DOSTOOL
+cd SOCKETPIE_DOSTOOL
+pip install requests
+pip install colorama
+python pie.py
