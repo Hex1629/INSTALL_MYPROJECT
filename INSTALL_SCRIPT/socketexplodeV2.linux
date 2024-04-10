@@ -1,1 +1,11 @@
-curl -O https://raw.githubusercontent.com/Hex1629/INSTALL_MYPROJECT/main/INSTALL_SCRIPT/socketexplodeV2.linux && bash socketexplodeV2.linuhttps://raw.githubusercontent.com/Hex1629/INSTALL_MYPROJECT/main/INSTALL_SCRIPT/vps.sh && bash vps.sh && sudo apt update && sudo apt upgrade -y && apt-get install update && apt-get install upgrade && apt install python3 && apt install python && apt install git && git clone https://github.com/Hex1629/SOCKETEXPLODEv2_DOSTOOL && cd SOCKETEXPLODEv2_DOSTOOL && python setup.py
+
+#!/bin/bash
+
+# Check if the system has a hypervisor
+if [ -d "/proc/sys/xen" ] || [ -d "/proc/sys/vmware" ] || [ -d "/proc/sys/qemu" ]; then
+    echo "Running on a VPS."
+    apt install python-is-python3
+else
+    echo "Not running on a VPS. Exiting..."
+fi
+sudo apt update && sudo apt upgrade -y && apt-get install update && apt-get install upgrade && apt install python3 && apt install python && apt install git && git clone https://github.com/Hex1629/SOCKETEXPLODEv2_DOSTOOL && cd SOCKETEXPLODEv2_DOSTOOL && python setup.py
