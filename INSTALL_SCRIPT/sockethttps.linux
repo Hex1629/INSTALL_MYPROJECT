@@ -1,0 +1,11 @@
+apt install -y python-is-python3 python3 git python3-pip
+apt update -y
+apt upgrade -y
+if [ $? -ne 0 ]; then
+    apt-get update -y
+    apt-get upgrade -y
+    apt-get install -y python3 git python-is-python3 python3-pip
+fi
+git clone https://github.com/Hex1629/SOCKETHTTPS_DOSTOOL/
+cd SOCKETHTTPS_DOSTOOL
+ls
