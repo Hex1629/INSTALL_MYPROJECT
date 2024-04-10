@@ -1,0 +1,3 @@
+git clone https://github.com/Hex1629/SOCKETEXPLODEv2_DOSTOOL
+cd SOCKETEXPLODEv2_DOSTOOL
+python setup.py
