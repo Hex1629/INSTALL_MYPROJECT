@@ -1,4 +1,9 @@
 apt install -y python-is-python3 python3 git python3-pip
+yum install -y python3 git python-is-python3 python3-pip
+apk add python3 git py3-pip
+pacman -S python git python-pip
+zypper install -y python3 git python3-pip python-is-python3
+sudo dnf install -y python3 git python3-pip python-is-python3
 apt update -y
 apt upgrade -y
 if [ $? -ne 0 ]; then
